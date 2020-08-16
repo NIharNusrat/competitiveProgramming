@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int a[30];
+int cnt=0;
+
+void func(int n){
+    if(n<1000){
+a[cnt]=n;
+cnt++;
+ func(n*10+4);
+ func(n*10+7);
+    }
+}
+int main(){
+    int num;
+    int l=0;
+    cin>>num;
+func(0);
+for(int i=1;i<cnt;i++){
+  if(num%a[i]==0){
+    cout<<"YES"<<endl;
+    return 0;
+  }
+
+}
+cout<<"NO"<<endl;
+
+return 0;
+}

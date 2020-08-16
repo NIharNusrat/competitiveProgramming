@@ -1,0 +1,22 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+char s[105],r[105],t[105];
+cin>>s;
+cin>>t;
+int i,l;
+l=strlen(s);
+
+for(i=0;i<l/2;i++){
+   swap(s[i],s[l-1-i]);
+}
+strcpy(r,s);
+if(strcmp(t,r)==0){
+   cout<<"YES"<<endl;
+}
+else{
+   cout<<"NO"<<endl;
+}
+return 0;
+}

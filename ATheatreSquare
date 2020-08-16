@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+long long int n,m,a,l,w;
+cin>>n>>m>>a;
+l=(n+a-1)/a;
+w=(m+a-1)/a;
+cout<<l*w<<endl;
+return 0;
+}

@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+char s[105],r[105];
+cin>>s;
+
+int i,l;
+l=strlen(s);
+
+for(i=0;i<l/2;i++){
+   swap(s[i],s[l-1-i]);
+}
+strcpy(r,s);
+cout<<r;
+return 0;
+}

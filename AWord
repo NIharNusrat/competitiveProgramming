@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main(){
+string s;
+cin>>s;
+int i,l,u;
+l=0,u=0;
+char c;
+for(i=0;i<s.size();i++){
+   if(s[i]>='a'&&s[i]<='z'){
+    l++;
+   }
+
+  else if(s[i]>='A'&&s[i]<='Z'){
+    u++;
+   }
+}
+if(l<u){
+  for(i=0;i<s.size();i++){
+    c=toupper(s[i]);
+    cout<<c;
+  }
+}
+else if(u<=l){
+  for(i=0;i<s.size();i++){
+    c=tolower(s[i]);
+    cout<<c;
+  }
+}
+
+
+return 0;
+}
